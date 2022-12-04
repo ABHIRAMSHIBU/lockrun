@@ -11,16 +11,16 @@ endif()
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -pedantic")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -pedantic -DNDEBUG")
 
 set(CMAKE_DEBUG_POSTFIX d)
 
-file(GLOB SRCS *.cc)
+add_subdirectory(src)
 
 if( UNIX )
     message(STATUS "Host OS is UNIX/LINUX, proceeding.")
     add_executable(lockrun ${SRCS})
-    target_include_directories(lockrun PRIVATE ${CMAKE_SOURCE_DIR})
+    target_include_directories(lockrun PRIVATE ${CMAKE_SOURCE_DIR}/include())
     set_target_properties(lockrun PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
 else( UNIX )
     message(FATAL_ERROR "This project only works in UNIX/LINUX environment")

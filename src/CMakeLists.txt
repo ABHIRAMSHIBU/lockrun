@@ -1,0 +1,2 @@
+file(GLOB SRCS *.cc)
+set(SRCS ${SRCS} PARENT_SCOPE)
