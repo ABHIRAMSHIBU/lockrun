@@ -1,3 +1,5 @@
+/* Copyleft 🄯 Abhiram Shibu 2022 */
+
 #include "Lock.hh"
 
 Lock::Lock(std::string lockFile){

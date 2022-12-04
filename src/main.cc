@@ -1,3 +1,5 @@
+/* Copyleft 🄯 Abhiram Shibu 2022 */
+
 #include "Shell.hh"
 #include "Lock.hh"
 #include "Debug.hh"

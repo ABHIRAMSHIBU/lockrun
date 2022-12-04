@@ -1,3 +1,5 @@
+/* Copyleft 🄯 Abhiram Shibu 2022 */
+
 #include "Shell.hh"
 
 void * execCommand(const char * commandArgs[]){

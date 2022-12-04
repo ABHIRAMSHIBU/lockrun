@@ -1,3 +1,5 @@
+/* Copyleft 🄯 Abhiram Shibu 2022 */
+
 #include <iostream>
 #include <string>
 #include <sys/stat.h>
